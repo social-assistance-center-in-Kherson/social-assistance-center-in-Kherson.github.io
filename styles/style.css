@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  color:#281A39;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+
+/*header image*/
+
+.image-container{
+  text-align: center;
+}
+
+.companies{
+  max-width: 400px; 
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/*header*/
+
+header {
+  background-color: #f6f6f6;
+  padding: 10px 0;
+  width: 100%;
+
+  position: fixed;  
+  top: 0;  
+  z-index: 100;  
+  width: 100%;  
+}
+
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-menu li {
+  padding: 5px 20px;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+
+/*gradient*/
+
+.gradient{
+  background: rgb(69,53,77);
+  background: radial-gradient(circle, rgba(69,53,77,1) 0%, rgba(229,197,180,1) 100%);
+  color:white;
+  text-align: center;
+  margin-top: 175px;
+}
+.gradient h1{
+  margin: 175px 100px 30px 100px;
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
+.gradient h3{
+  margin: 30px 70px 175px 70px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
+
+
+/*list*/
+
+.list{
+  font-family: 'Times New Roman', Times, serif;
+  width: calc(70% - 5px);
+}
+.list h1{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.list li{
+  padding: 5px auto;
+  display: block;
+  margin: 10px;
+}
+
+.list a{
+  color:#333333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+/*initiative*/
+
+.initiative{
+  padding: 0 40px 40px 40px;
+  margin: 0;
+  width: 30%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.initiative, .list {
+  flex: 1;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.conteiner{
+  background-color: #fff;
+}
+
+.free h1{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.cards{
+  text-align: center;
+}
+
+.card {
+  transition: 0.3s;
+  width: 25%;
+  border-radius: 10px;
+  padding: 15px;
+  display: inline-block;
+  margin: 25px;
+  padding-bottom: 25px;
+  background-color: white;
+}
+
+.card img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card .button{
+  background-color:#E4C4B3;
+  border:none;
+  border-radius:10px;
+  padding: 10px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color:#333333;
+}
