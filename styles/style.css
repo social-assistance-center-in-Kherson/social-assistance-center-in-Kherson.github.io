@@ -70,6 +70,16 @@ header {
   padding: 20px;
 }
 
+.navigation-menu li a:hover {
+  text-decoration: none;
+  color: #333333;
+  background-color: #E1C1B1;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 25px;
+  padding: 20px;
+}
+
 
 /*gradient*/
 
