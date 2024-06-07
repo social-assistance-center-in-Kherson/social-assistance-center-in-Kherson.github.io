@@ -80,6 +80,15 @@ header {
   padding: 20px;
 }
 
+#urgent_question:hover{
+  text-decoration: none;
+  color: white;
+  background-image: url(../images/house.jpg);
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 25px;
+  padding: 20px;
+}
 
 /*gradient*/
 
