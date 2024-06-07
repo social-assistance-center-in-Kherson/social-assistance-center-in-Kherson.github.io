@@ -20,6 +20,10 @@ container {
 a{
   color:#333333;
 }
+a:hover{
+  color:#333333;
+  text-decoration: none;
+}
 
 /*header image*/
 
@@ -28,12 +32,10 @@ a{
 }
 
 .companies{
-  max-width: 400px; 
+  max-width: 1000px; 
   height: auto;
-  border: 1px solid black;
   padding: 2px;
   background-color: white;
-  padding: 20px;
   margin-bottom: 10px;
 }
 
@@ -42,7 +44,7 @@ a{
 
 header {
   background-color: #f6f6f6;
-  padding: 20px 0;
+  padding: 0 0   20px 0;
   width: 100%;
 
   position: fixed;  
@@ -133,10 +135,13 @@ header {
 
 .list a{
   color:#333333;
+  font-size: 20px;
+}
+.list a:hover{
+  color:#333333;
   text-decoration: none;
   font-size: 20px;
 }
-
 
 /*initiative*/
 
