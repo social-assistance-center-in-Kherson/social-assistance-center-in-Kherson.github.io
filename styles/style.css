@@ -119,7 +119,7 @@ header {
 
 .list{
   font-family: 'Times New Roman', Times, serif;
-  width: calc(70% - 5px);
+  width: 100%;
 }
 .list h1{
   text-align: center;
@@ -129,7 +129,6 @@ header {
 
 .list li{
   padding: 5px auto;
-  display: block;
   margin: 10px;
 }
 
@@ -141,26 +140,6 @@ header {
   color:#333333;
   text-decoration: none;
   font-size: 20px;
-}
-
-/*initiative*/
-
-.initiative{
-  padding: 0 40px 40px 40px;
-  margin: 0;
-  width: 30%;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.initiative, .list {
-  flex: 1;
-  box-sizing: border-box;
-  display: inline-block;
-}
-.conteiner{
-  background-color: #fff;
 }
 
 .free h1{
