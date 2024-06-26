@@ -55,6 +55,21 @@
   font-weight: 300;
 }
 
+@media screen and (max-width: 700px) {
+  .gradient{
+    margin-top: 80px;
+  }
+  .gradient h1{
+    margin:80px 40px 15px 40px;
+    font-size: 30px;
+  }
+  .gradient h3{
+    margin: 15px 40px 80px 40px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
 .titleImg{
   width: 100%;
 }
