@@ -25,6 +25,22 @@ a:hover{
 }
 h1{ font-weight: 500; }
 
+main{
+  margin-top: 175px; 
+  margin-bottom: 20px;
+}
+
+main h1{
+  text-align: center;
+  font-size: 50px;
+}
+
+.consult{
+  text-align: center;
+  margin-top: calc(175px + 100px); 
+  margin-bottom: 20px; 
+  text-align: center;
+}
 
 /* General styles */
 .image-container {
@@ -85,35 +101,65 @@ container {
   container {
     width: 95%;
   }
+  .image-container {
+    text-align: center;
+  }
+  
+  .companies {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  
   .navigation-menu {
     display: none;
     flex-direction: column;
     width: 100%;
   }
   .navigation-menu li {
-    width: 100%;
     text-align: center;
+    margin: 5px auto;
+    width: 200px;
   }
   .navigation-menu li a {
     display: block;
-    padding: 15px;
+    padding: 5px;
     font-size: 18px;
   }
   .hamburger {
     display: block;
     cursor: pointer;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 10px;
+    top: 10px;
+    background-color: rgba(225, 193, 177, 0.7);
+    padding: 5px;
+    border-radius: 3px;
   }
   .hamburger div {
     width: 30px;
     height: 3px;
-    background-color: var(--font-color);
+    background-color: rgba(51, 51, 51, 0.7);
     margin: 5px 0;
   }
   .show-menu {
     display: flex;
+  }
+
+  main{
+    margin-top: 40px; 
+    margin-bottom: 20px;
+  }
+  
+  main h1{
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .consult{
+    text-align: center;
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+    text-align: center;
   }
 }
 
@@ -139,10 +185,6 @@ container {
   font-size: 20px;
 }
 
-main h1{
-  text-align: center;
-  font-size: 50px;
-}
 
 table {
   border-collapse: collapse;
