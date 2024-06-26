@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://social-assistance-center-in-kherson.github.io/sitemap.xml
