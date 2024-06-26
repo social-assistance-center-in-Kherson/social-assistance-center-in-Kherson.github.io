@@ -1,0 +1,60 @@
+.free h1{
+  text-align: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; 
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--color-white);
+  box-sizing: border-box; 
+  width: 100%;
+}
+
+.card img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card .button {
+  border: var(--menu_border-color) 3px solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.card .button:hover {
+  background-color: var(--menu_border-color);
+}
+
+.gradient{
+  background: var(--gradient-background);
+  background: radial-gradient(circle, var(--gradient-background) 0%, var(--menu_border-color) 100%);
+  color: var(--color-white);
+  text-align: center;
+  margin-top: 175px;
+}
+.gradient h1{
+  margin: 175px 100px 30px 100px;
+  font-size: 60px;
+}
+.gradient h3{
+  margin: 30px 70px 175px 70px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.titleImg{
+  width: 100%;
+}
