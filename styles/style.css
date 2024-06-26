@@ -1,13 +1,76 @@
+:root {
+  --font-family: 'Times New Roman', Times, serif;
+  --font-color: #333333;
+  --menu-font-size: 24px;
+  --background-color: #f6f6f6;
+  --color-white: white;
+  --gradient-background: rgb(69,53,77);
+  --menu_border-color: #E1C1B1;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f6f6f6;
-  color:#281A39;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color:var(--font-color);
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+a{ color:var(--font-color); }
+a:hover{
+  color:var(--font-color);
+  text-decoration: none;
+}
+h1{ font-weight: 500; }
+
+
+/* General styles */
+.image-container {
+  text-align: center;
+}
+
+.companies {
+  margin-bottom: 10px;
+}
+
+/* Header styles */
+header {
+  background-color: var(--background-color);
+  padding: 0 0 20px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navigation menu */
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: var(--menu-font-size);
+  border: var(--menu_border-color) 3px solid;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.navigation-menu li a:hover {
+  background-color: var(--menu_border-color);
+}
+
+#urgent_question:hover {
+  color: var(--color-white);
+  background-image: url(../images/house.jpg);
+}
+
+/* Container styles */
 container {
   display: flex;
   flex-direction: column;
@@ -17,180 +80,68 @@ container {
   box-sizing: border-box;
 }
 
-a{
-  color:#333333;
-}
-a:hover{
-  color:#333333;
-  text-decoration: none;
-}
-
-/*header image*/
-
-.image-container{
-  text-align: center;
-}
-
-.companies{
-  max-width: 1000px; 
-  height: auto;
-  padding: 2px;
-  background-color: white;
-  margin-bottom: 10px;
-}
-
-
-/*header*/
-
-header {
-  background-color: #f6f6f6;
-  padding: 0 0   20px 0;
-  width: 100%;
-
-  position: fixed;  
-  top: 0;  
-  z-index: 100;  
-  width: 100%; 
-}
-.navigation-menu {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-.navigation-menu li {
-  padding: 5px 20px;
-}
-
-.navigation-menu li a {
-  text-decoration: none;
-  color: #333333;
-  font-size: 24px;
-  font-family: 'Times New Roman', Times, serif;
-  border: #E1C1B1 3px solid;
-  border-radius: 25px;
-  padding: 20px;
-}
-
-.navigation-menu li a:hover {
-  text-decoration: none;
-  color: #333333;
-  background-color: #E1C1B1;
-  font-size: 24px;
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 25px;
-  padding: 20px;
-}
-
-#urgent_question:hover{
-  text-decoration: none;
-  color: white;
-  background-image: url(../images/house.jpg);
-  font-size: 24px;
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 25px;
-  padding: 20px;
-}
-
-/*gradient*/
-
-.gradient{
-  background: rgb(69,53,77);
-  background: radial-gradient(circle, rgba(69,53,77,1) 0%, rgba(229,197,180,1) 100%);
-  color:white;
-  text-align: center;
-  margin-top: 175px;
-}
-.gradient h1{
-  margin: 175px 100px 30px 100px;
-  font-size: 60px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 300;
-}
-.gradient h3{
-  margin: 30px 70px 175px 70px;
-  font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 300;
+/* Mobile styles */
+@media screen and (max-width: 700px) {
+  container {
+    width: 95%;
+  }
+  .navigation-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navigation-menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navigation-menu li a {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: var(--font-color);
+    margin: 5px 0;
+  }
+  .show-menu {
+    display: flex;
+  }
 }
 
 
 /*list*/
 
-.list{
-  font-family: 'Times New Roman', Times, serif;
-  width: 100%;
-}
 .list h1{
   text-align: center;
   font-size: 50px;
-  font-weight: 500;
 }
 
 .list li{
-  padding: 5px auto;
   margin: 10px;
 }
 
 .list a{
-  color:#333333;
+  color:var(--font-color);
   font-size: 20px;
 }
 .list a:hover{
-  color:#333333;
+  color:var(--font-color);
   text-decoration: none;
   font-size: 20px;
-}
-
-.free h1{
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  font-weight: 500;
-}
-
-.cards{
-  text-align: center;
-}
-
-.card {
-  transition: 0.3s;
-  width: 25%;
-  border-radius: 10px;
-  padding: 15px;
-  display: inline-block;
-  margin: 25px;
-  padding-bottom: 25px;
-  background-color: white;
-}
-
-.card img {
-  border-radius: 10px;
-  width: 100%;
-}
-
-.card .button{
-  border: #E1C1B1 3px solid;
-  border-radius:10px;
-  padding: 10px 40px;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-  color:#333333;
-}
-.card .button:hover{
-  background-color:#E1C1B1;
-}
-
-
-main{
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 500;
 }
 
 main h1{
   text-align: center;
   font-size: 50px;
-  font-weight: 500;
 }
 
 table {
@@ -198,6 +149,6 @@ table {
   width: 100%;
 }
 td {
-    border: 1px solid grey;
-    padding: 10px;
+  border: 1px solid var(--font-color);
+  padding: 10px;
 }
