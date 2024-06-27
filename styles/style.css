@@ -130,7 +130,7 @@ container {
     cursor: pointer;
     position: absolute;
     right: 10px;
-    top: 10px;
+    bottom: 10px;
     background-color: rgba(225, 193, 177, 0.7);
     padding: 5px;
     border-radius: 3px;
